@@ -8,44 +8,113 @@
     --texto: #333D36;
 }
 
-body {
-    margin: 0;
-    background-color: #031c26;
-    color: #f5f7f8;
-    font-family: Arial, Helvetica, sans-serif;
+#logoImg {
+width: 120px;
+height: auto;
 }
 
-#logoImg{
-    width: 120px;
-    height: auto;
+/* PANEL PRINCIPAL */
+
+.panel-dashboard {
+    background-color: #032629;
+    border: 2px solid #e8eeee;
+    border-radius: 0;
 }
 
-/* HOME */
-.dashboard-header {
-    margin: 0 -26px 26px;
-    padding: 14px 24px 10px;
+/* SUBTITULO */
+
+.subtitulo {
+    color: #d0dddd;
+    font-weight: normal;
     border-bottom: 1px solid #819294;
+    padding-bottom: 12px;
 }
 
-.dashboard-header h1 {
-    margin: 0 0 5px;
-    color: #ffffff;
-    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
-    font-weight: 700;
+/* TARJETAS */
+
+.tarjeta {
+    background-color: #082b5d;
+    color: white;
+    border: none;
+    border-radius: 0;
 }
 
-.dashboard-header p {
-    margin: 0;
-    color: #e0e8e9;
-    font-size: 1rem;
-    font-weight: 400;
+.tarjeta h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
 }
+
+.tarjeta a {
+    color: #d5e0f0;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    color: white;
+}
+
+/* TABLA */
+
+.tabla-citas {
+    background-color: #032629;
+    color: white;
+    border-color: #245052;
+    font-size: 12px;
+}
+
+.tabla-citas thead th {
+    background-color: #082b30;
+    color: white;
+}
+
+.tabla-citas tbody td {
+    background-color: #032629;
+    color: white;
+    border-color: #245052;
+}
+
 
 /*Estilo Citas*/
-#aCitas{
-    color: #FFF9F0;
+.row{
+    display: flex;
+    align-items: stretch;
 }
-p{
-    font-weight: bold !important;
-    color: aqua !important;
+.Calendario{
+    padding: 10px;
+}
+.Calendario img{
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+.Calendario img:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.Tablar{
+    padding: 10px;
+}
+.card{
+    background-color: #333D36;
+}
+.card img{
+    padding: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.card p{
+    display: inline-block;
+    
+}
+#botonasignar{
+    background-color: rgb(127, 255, 204);
+    transition: background-color 0.2s ease;
+}
+#botonasignar:hover{
+    background-color: blueviolet;
 }

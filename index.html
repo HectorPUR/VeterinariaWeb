@@ -27,77 +27,86 @@
         </div>
     </nav>
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="container-fluid dashboard-container">
-        <section class="dashboard-panel">
+    <main class="container py-4">
+
+        <!-- PANEL PRINCIPAL -->
+        <div class="panel-dashboard p-4">
+
             <!-- ENCABEZADO -->
-            <header class="dashboard-header">
-                <h1>Bienvenido a la Veterinaria</h1>
-                <p>Resumen del día</p>
-            </header>
+            <h2 class="fw-bold mb-1">Bienvenido a la Veterinaria</h2>
+            <h5 class="subtitulo mb-4">Resumen del día</h5>
+
             <!-- PRIMERA FILA -->
-            <div class="row g-2 summary-row">
-                <div class="col-6 col-lg-3">
-                    <div class="card summary-card">
+            <div class="row g-2 mb-3">
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
                         <small>Citas del día</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3">
-                    <div class="card summary-card">
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
                         <small>Próximas citas</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3">
-                    <div class="card summary-card">
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
                         <small>Mascotas</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3">
-                    <div class="card summary-card">
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
                         <small>Alertas</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
+
             </div>
-            <!-- SEGUNDA FILA-->
-            <div class="row g-2 summary-row second-row">
+
+            <!-- SEGUNDA FILA -->
+            <div class="row g-2 mb-3">
+
                 <div class="col-12 col-md-4">
-                    <div class="card summary-card">
+                    <div class="card tarjeta text-center p-3">
                         <small>Ingresos</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4">
-                    <div class="card summary-card">
+                    <div class="card tarjeta text-center p-3">
                         <small>Solicitudes de recolección</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4">
-                    <div class="card summary-card">
+                    <div class="card tarjeta text-center p-3">
                         <small>Citas del día</small>
-                        <div class="summary-number">3</div>
-                        <a href="agendar.html">Ir a la agenda</a>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
                     </div>
                 </div>
+
             </div>
-            <!-- CITAS -->
-            <div class="table-responsive appointments-container">
-                <table class="table table-dark table-bordered table-striped
-                            text-center align-middle appointments-table">
+
+            <!-- TABLA DE CITAS -->
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-striped
+                            text-center align-middle tabla-citas">
 
                     <thead>
                         <tr>
@@ -114,12 +123,12 @@
                     <tbody>
                         <tr>
                             <td>13-09-26</td>
-                            <td>12:00 AM</td>
+                            <td>12:00 PM</td>
                             <td>Lulu</td>
                             <td>Juan Carlos Espinoza</td>
                             <td>Desparasitación</td>
                             <td>Dra. Lucía</td>
-                            <td></td>
+                            <td>Pendiente</td>
                         </tr>
 
                         <tr>
@@ -129,7 +138,7 @@
                             <td>Carmen García</td>
                             <td>Vacunación</td>
                             <td>Dr. Pérez</td>
-                            <td></td>
+                            <td>Confirmada</td>
                         </tr>
 
                         <tr>
@@ -139,17 +148,17 @@
                             <td>Liliana Cisneros</td>
                             <td>Revisión</td>
                             <td>Dr. Mendoza</td>
-                            <td></td>
+                            <td>Completada</td>
                         </tr>
                     </tbody>
+
                 </table>
+
             </div>
 
-        </section>
+        </div>
     </main>
-
-
-        
+     
     </div>
 </body>
 </html>
