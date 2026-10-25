@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria</title>
-    <link rel="stylesheet" href="css/miEstilo4">
+    <link rel="stylesheet" href="CSS/miEstilo4.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
 </head>
-<body style="background-color: #021F23; color: aliceblue; display: block;">
+<body style="background-color: #002328; color: aliceblue; display: block;">
    <!-- NAVEGACION -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
@@ -26,50 +26,51 @@
             </div>
         </div>
     </nav>
+    <!--Fotos-->
     <!--Registrar cita-->
     <article id="aCitas" class="py-5">
-        <div class="container p-5 mt-5" style="background-color: #01282d; color: aliceblue;" >
+        <div class="container p-5 mt-5" style="background-color: #004750; color: aliceblue; border-radius: 25px;;" >
             <h2 class="text-center mb-4">Registrar Cita</h2>
                     <!--Formulario Boostrap-->
                     <form class="row g-3">
   <div class="col-md-6">
     <p style="color: aqua; font-weight: bold; font-size: 20px;" class="mb-3">Datos del dueño</p>
     <div class="mb-3">
-    <label for="validationDefault01" class="form-label">Nombre</label>
+    <label for="validationDefaultNombre" class="form-label">Nombre</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   <div class="mb-3">
     <label for="validationDefaultUsername" class="form-label">Numero de Telefono</label>
     <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">477</span>
-      <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+      <span class="input-group-text" id="inputGroupPrepend2">+52</span>
+      <input type="tel" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
     </div>
   </div>
     <div class="mb-3">
-    <label for="validationDefault01" class="form-label">Direccion</label>
+    <label for="validationDefaultDireccion" class="form-label">Direccion</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   </div>
   <div class="col-md-6">
     <p style="color: aqua; font-weight: bold; font-size: 20px;"class="mb-3">Datos de la mascota</p>
     <div class="mb-3">
-    <label for="validationDefault02" class="form-label">Nombre</label>
+    <label for="validationDefaultNombre" class="form-label">Nombre</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault02" value="Otto" required>
   </div>
   <div class="mb-3">
-    <label for="validationDefault01" class="form-label">Peso Kg</label>
+    <label for="validationDefault0Peso" class="form-label">Peso Kg</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   <div class="row mb-3">
   <div class="col-md-4 d-inline-block">
-    <label for="validationDefault04" class="form-label">Edad</label>
+    <label for="validationDefaultEdad" class="form-label">Edad</label>
     <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-4 gap-3">
-    <label for="validationDefault04" class="form-label">Especie</label>
+    <label for="validationDefault0Especie" class="form-label">Especie</label>
     <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
@@ -96,39 +97,125 @@
   </div>
    <div class="col-md-12">
     <p style="color: aqua; font-weight: bold; font-size: 20px;"class="mb-3">Datos de la cita</p>
-    <div class="col-md-5 d-inline-block">
-    <label for="validationDefault02" class="form-label">Servivio</label>
-    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault02" value="Otto" required>
+    <div class="col-md-4 gap-3">
+    <label for="validationDefaultServicio" class="form-label">Servivio</label>
+    <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
   </div>
   <div class="col-md-5 d-inline-block">
-    <label for="validationDefault01" class="form-label">Motivo</label>
+    <label for="validationDefaultMotivo" class="form-label">Motivo</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   <div class="col-md-3 d-inline-block">
-    <label for="validationDefault01" class="form-label">Fecha</label>
-    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
+    <label for="validationDefaultFecha" class="form-label">Fecha</label>
+    <input type="date" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   <div class="col-md-3 gap-3 d-inline-block">
-    <label for="validationDefault04" class="form-label">Hora</label>
+    <label for="validationDefaultHora" class="form-label">Hora</label>
     <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-4 gap-3 d-inline-block">
-    <label for="validationDefault01" class="form-label">Consultorio Asigando</label>
+    <label for="validationDefaultConsultorio" class="form-label">Consultorio Asigando</label>
     <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
    </div>
    
   <div class="col-md-12">
-    <button type="button" class="btn  btn-lg bg-success pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Guardar</button>
-    <button type="button" class="btn  btn-lg bg-danger pt-2 mb-2" style="color: aliceblue;  font-weight: bold; border-radius: 20px;">Cancelar</button>
-    <button type="button" class="btn  btn-lg bg-primary pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Registrar mascota</button>
+    <button type="button submit" class="btn  btn-lg bg-success pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Guardar</button>
+    <button type="button reset" class="btn  btn-lg bg-danger pt-2 mb-2" style="color: aliceblue;  font-weight: bold; border-radius: 20px;">Cancelar</button>
+    <button type="button submit" class="btn  btn-lg bg-primary pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Registrar mascota</button>
   </div>
 </div>
 </div>
 </article>
+
+<!--Imagen-->
+<div class="container-tyi">
+  <div class="row justify-content-center g-1">
+    <div class="col-md-5">
+  <div class="Calendario">
+    <img src="imagenes/calendario.webp" alt="">
+  </div>
+  </div>
+
+<!--TABLA REGISTRO-->
+<div class="col-md-5">
+<div class="Tablar">
+  <table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Hora</th>
+      <th scope="col">Nombre Mascota</th>
+      <th scope="col">Vterinario</th>
+      <th scope="col">Asignacion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">23/10/2026</th>
+      <td >12:00am</td>
+      <td>Candy</td>
+      <td>Lucia M.</td>
+      <td>
+        <span class="badge text-bg-success">Confirmado</span>
+      </td>
+    </tr>
+    <tr>
+     <th scope="row">23/10/2026</th>
+      <td >1:00pm</td>
+      <td>Max</td>
+      <td>Pablo H.</td>
+      <td>
+        <span class="badge text-bg-warning">En espera</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">23/10/2026</th>
+      <td >2:00pm</td>
+      <td>Zeus</td>
+      <td>Grecia J.</td>
+      <td>
+        <span class="badge text-bg-warning">En espera</span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">23/10/2026</th>
+      <td >4:00pm</td>
+      <td>Daisy</td>
+      <td>Julian C.</td>
+      <td>
+        <span class="badge text-bg-primary">Atendida</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="col-md-12">
+  <div class="card d-flex flex-row" style="background-color: #004750; border-radius: 25px;">
+     <img src="imagenes/Veterinario.jpg" alt="">
+    <div class="d-flex flex-column mt-3 mb-3">
+    <h2 style="color: aliceblue; font-weight: bold; font-size: 25px;">DISPONIBILIDAD</h2>
+    <p style="color: aliceblue; font-weight: bold;">Dr.Perez</p>
+    <p style="color: aliceblue; font-weight: bold;">Medico Veterinario</p>
+    <div class="col-md-12 flex-row">
+      <button type="button" class="btn" style="background-color: rgb(0, 225, 255); border-radius: 12px;">DISPONIBLE</button>
+      <button type="button" class="btn btn-secondary" style="border-radius: 12px;" disabled>AUSENTE</button>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-12 flex-row pt-3 text-center">
+        <button id="botonasignar" type="button" class="btn" style="border-radius: 12px;">ASIGNAR CITA</button>
+    </div>
+</div> 
+</div>
+</div>
+</div>
 
 
 </body>
