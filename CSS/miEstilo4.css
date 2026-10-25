@@ -1,0 +1,51 @@
+/* PALETA DE COLORES*/
+:root {
+    --verde-oscuro: #245C42;
+    --verde-natural: #4F8A5B;
+    --naranja: #E89B55;
+    --cafe: #8B654A;
+    --crema: #FFF9F0;
+    --texto: #333D36;
+}
+
+/*Estilo Citas*/
+.row{
+    display: flex;
+    align-items: stretch;
+}
+.Calendario{
+    padding: 10px;
+}
+.Calendario img{
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+.Calendario img:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.Tablar{
+    padding: 10px;
+}
+.card{
+    background-color: #333D36;
+}
+.card img{
+    padding: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.card p{
+    display: inline-block;
+    
+}
+#botonasignar{
+    background-color: rgb(127, 255, 204);
+    transition: background-color 0.2s ease;
+}
+#botonasignar:hover{
+    background-color: blueviolet;
+}
