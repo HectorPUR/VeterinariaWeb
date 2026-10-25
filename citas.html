@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" href="#">Inicio</a>
-                <a class="nav-link" href="#">Citas</a>
+                <a class="nav-link" href="citas.html">Citas</a>
                 <a class="nav-link" href="#">Agendar</a>
                 <a class="nav-link" href="#">Personal</a>
             </div>
@@ -28,61 +28,62 @@
     </nav>
     <!--Registrar cita-->
     <article id="aCitas" class="py-5">
-        <div class="container p-5 mt-5" style="background-color: #013a4122;" >
+        <div class="container p-5 mt-5" style="background-color: #01282d; color: aliceblue;" >
             <h2 class="text-center mb-4">Registrar Cita</h2>
                     <!--Formulario Boostrap-->
                     <form class="row g-3">
   <div class="col-md-6">
-    <p class="mb-3">Datos del dueño</p>
+    <p style="color: aqua; font-weight: bold; font-size: 20px;" class="mb-3">Datos del dueño</p>
     <div class="mb-3">
     <label for="validationDefault01" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   <div class="mb-3">
     <label for="validationDefaultUsername" class="form-label">Numero de Telefono</label>
     <div class="input-group">
       <span class="input-group-text" id="inputGroupPrepend2">477</span>
-      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+      <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
     </div>
-    <div class="mb-3 pt-3">
-    <label for="validationDefault01" class="form-label">Direccion</label>
-    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
   </div>
+    <div class="mb-3">
+    <label for="validationDefault01" class="form-label">Direccion</label>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
   </div>
   <div class="col-md-6">
-    <p class="mb-3">Datos de la mascota</p>
+    <p style="color: aqua; font-weight: bold; font-size: 20px;"class="mb-3">Datos de la mascota</p>
     <div class="mb-3">
     <label for="validationDefault02" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault02" value="Otto" required>
   </div>
-  <div class="mb-3 pt-3">
+  <div class="mb-3">
     <label for="validationDefault01" class="form-label">Peso Kg</label>
-    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
   </div>
+  <div class="row mb-3">
   <div class="col-md-4 d-inline-block">
     <label for="validationDefault04" class="form-label">Edad</label>
-    <select class="form-select" id="validationDefault04" required>
+    <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
-  <div class="col-md-4 gap-3 d-inline-block">
+  <div class="col-md-4 gap-3">
     <label for="validationDefault04" class="form-label">Especie</label>
-    <select class="form-select" id="validationDefault04" required>
+    <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
       <option selected disabled value="">Choose...</option>
       <option>...</option>
     </select>
   </div>
+  <div class="col-md-4 gap-2">
   <p>Alergias</p>
-  <div class="col-md-4 gap-2 d-inline-block">
   <div class="form-check">
   <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
   <label class="form-check-label" for="radioDefault1">
     Si
   </label>
 </div>
-<div class="col-md-4 gap-2 d-inline-block"></div>
+<div class="col-md-4 gap-2">
 <div class="form-check">
   <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
   <label class="form-check-label" for="radioDefault2">
@@ -91,12 +92,43 @@
 </div>
   </div>
    </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
+   </div>
+  </div>
+   <div class="col-md-12">
+    <p style="color: aqua; font-weight: bold; font-size: 20px;"class="mb-3">Datos de la cita</p>
+    <div class="col-md-5 d-inline-block">
+    <label for="validationDefault02" class="form-label">Servivio</label>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault02" value="Otto" required>
+  </div>
+  <div class="col-md-5 d-inline-block">
+    <label for="validationDefault01" class="form-label">Motivo</label>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
+  </div>
+  <div class="col-md-3 d-inline-block">
+    <label for="validationDefault01" class="form-label">Fecha</label>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
+  </div>
+  <div class="col-md-3 gap-3 d-inline-block">
+    <label for="validationDefault04" class="form-label">Hora</label>
+    <select class="form-select" style="background-color: #021F23; color: aliceblue;" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-4 gap-3 d-inline-block">
+    <label for="validationDefault01" class="form-label">Consultorio Asigando</label>
+    <input type="text" class="form-control" style="background-color: #021F23; color: aliceblue;" id="validationDefault01" value="Mark" required>
+  </div>
+   </div>
+   
+  <div class="col-md-12">
+    <button type="button" class="btn  btn-lg bg-success pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Guardar</button>
+    <button type="button" class="btn  btn-lg bg-danger pt-2 mb-2" style="color: aliceblue;  font-weight: bold; border-radius: 20px;">Cancelar</button>
+    <button type="button" class="btn  btn-lg bg-primary pt-2 mb-2" style="color: aliceblue; font-weight: bold; border-radius: 20px;">Registrar mascota</button>
   </div>
 </div>
 </div>
-    </article>
+</article>
 
 
 </body>

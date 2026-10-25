@@ -12,3 +12,7 @@
 #aCitas{
     color: #FFF9F0;
 }
+p{
+    font-weight: bold !important;
+    color: aqua !important;
+}
