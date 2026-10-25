@@ -1,0 +1,51 @@
+/* PALETA DE COLORES*/
+:root {
+    --verde-oscuro: #245C42;
+    --verde-natural: #4F8A5B;
+    --naranja: #E89B55;
+    --cafe: #8B654A;
+    --crema: #FFF9F0;
+    --texto: #333D36;
+}
+
+body {
+    margin: 0;
+    background-color: #031c26;
+    color: #f5f7f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logoImg{
+    width: 120px;
+    height: auto;
+}
+
+/* HOME */
+.dashboard-header {
+    margin: 0 -26px 26px;
+    padding: 14px 24px 10px;
+    border-bottom: 1px solid #819294;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 5px;
+    color: #ffffff;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+}
+
+.dashboard-header p {
+    margin: 0;
+    color: #e0e8e9;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Estilo Citas*/
+#aCitas{
+    color: #FFF9F0;
+}
+p{
+    font-weight: bold !important;
+    color: aqua !important;
+}
