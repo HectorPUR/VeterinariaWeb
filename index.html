@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria</title>
-    <link rel="stylesheet" href="css/miEstilo4">
+    <link rel="stylesheet" href="css/miEstilo4.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body style="background-color: #021F23; color: aliceblue; display: block;">
    <!-- NAVEGACION -->
-    <nav class="navbar navbar-expand-lg bg-success-subtle">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Veterinaria</a>
+            <img src="imagenes/logo1.png" alt="Logo Veterinaria" id="logoImg">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,11 +20,145 @@
             <div class="navbar-nav">
                 <a class="nav-link" href="index.html">Inicio</a>
                 <a class="nav-link" href="citas.html">Citas</a>
-                <a class="nav-link" href="agenda.html">Agendar</a>
+                <a class="nav-link" href="agendar.html">Agenda</a>
                 <a class="nav-link" href="personal.html">Personal</a>
             </div>
             </div>
         </div>
     </nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-4">
+
+        <!-- PANEL PRINCIPAL -->
+        <div class="panel-dashboard p-4">
+
+            <!-- ENCABEZADO -->
+            <h2 class="fw-bold mb-1">Bienvenido a la Veterinaria</h2>
+            <h5 class="subtitulo mb-4">Resumen del día</h5>
+
+            <!-- PRIMERA FILA -->
+            <div class="row g-2 mb-3">
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Citas del día</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Próximas citas</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Mascotas</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Alertas</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEGUNDA FILA -->
+            <div class="row g-2 mb-3">
+
+                <div class="col-12 col-md-4">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Ingresos</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Solicitudes de recolección</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card tarjeta text-center p-3">
+                        <small>Citas del día</small>
+                        <h2>3</h2>
+                        <a href="citas.html">Ir a la agenda</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TABLA DE CITAS -->
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-striped
+                            text-center align-middle tabla-citas">
+
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Mascota</th>
+                            <th>Dueño</th>
+                            <th>Servicio</th>
+                            <th>Veterinario</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>13-09-26</td>
+                            <td>12:00 PM</td>
+                            <td>Lulu</td>
+                            <td>Juan Carlos Espinoza</td>
+                            <td>Desparasitación</td>
+                            <td>Dra. Lucía</td>
+                            <td>Pendiente</td>
+                        </tr>
+
+                        <tr>
+                            <td>14-09-26</td>
+                            <td>1:00 PM</td>
+                            <td>Solovino</td>
+                            <td>Carmen García</td>
+                            <td>Vacunación</td>
+                            <td>Dr. Pérez</td>
+                            <td>Confirmada</td>
+                        </tr>
+
+                        <tr>
+                            <td>15-09-26</td>
+                            <td>2:00 PM</td>
+                            <td>Max</td>
+                            <td>Liliana Cisneros</td>
+                            <td>Revisión</td>
+                            <td>Dr. Mendoza</td>
+                            <td>Completada</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+    </main>
+     
+    </div>
 </body>
 </html>

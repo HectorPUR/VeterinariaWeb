@@ -1,0 +1,120 @@
+/* PALETA DE COLORES*/
+:root {
+    --verde-oscuro: #245C42;
+    --verde-natural: #4F8A5B;
+    --naranja: #E89B55;
+    --cafe: #8B654A;
+    --crema: #FFF9F0;
+    --texto: #333D36;
+}
+
+#logoImg {
+width: 120px;
+height: auto;
+}
+
+/* PANEL PRINCIPAL */
+
+.panel-dashboard {
+    background-color: #032629;
+    border: 2px solid #e8eeee;
+    border-radius: 0;
+}
+
+/* SUBTITULO */
+
+.subtitulo {
+    color: #d0dddd;
+    font-weight: normal;
+    border-bottom: 1px solid #819294;
+    padding-bottom: 12px;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: #082b5d;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+.tarjeta h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.tarjeta a {
+    color: #d5e0f0;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    color: white;
+}
+
+/* TABLA */
+
+.tabla-citas {
+    background-color: #032629;
+    color: white;
+    border-color: #245052;
+    font-size: 12px;
+}
+
+.tabla-citas thead th {
+    background-color: #082b30;
+    color: white;
+}
+
+.tabla-citas tbody td {
+    background-color: #032629;
+    color: white;
+    border-color: #245052;
+}
+
+
+/*Estilo Citas*/
+.row{
+    display: flex;
+    align-items: stretch;
+}
+.Calendario{
+    padding: 10px;
+}
+.Calendario img{
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+.Calendario img:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.Tablar{
+    padding: 10px;
+}
+.card{
+    background-color: #333D36;
+}
+.card img{
+    padding: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.card p{
+    display: inline-block;
+    
+}
+#botonasignar{
+    background-color: rgb(127, 255, 204);
+    transition: background-color 0.2s ease;
+}
+#botonasignar:hover{
+    background-color: blueviolet;
+}
