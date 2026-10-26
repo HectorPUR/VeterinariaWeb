@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/miEstilo4.css">
+</head>
 
+<body class="pagina-transporte">
+
+    <nav class="navbar navbar-expand-lg bg-success-subtle">
+        <div class="container-fluid">
+            <img src="imagenes/logo1.png" alt="Logo Veterinaria" id="logoImg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="citas.html">Citas</a>
+                <a class="nav-link" href="agendar.html">Agenda</a>
+                <a class="nav-link" href="personal.html">Personal</a>
+                <a class="nav-link active" aria-current="page" href="transporte.html">Transporte</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+<main class="container-fluid px-3 px-md-4 py-4 cuerpo-transporte">
+    <section class="panel-transporte mb-4">
+        <h2 class="titulo-transporte">
+            Recolección de Mascotas
+        </h2>
+        <div class="table-responsive">
+            <table class="table tabla-recoleccion mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Mascota</th>
+                        <th scope="col">Dueño</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Servicio</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12-09-26</td>
+                        <td>10:00 AM</td>
+                        <td>Lola</td>
+                        <td>Juan Carlos Espinoza</td>
+                        <td>San José, León, Gto.</td>
+                        <td>Baño</td>
+                        <td>
+                            <span class="estado-transporte completado">
+                                Completado
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14-09-26</td>
+                        <td>1:00 PM</td>
+                        <td>Solovino</td>
+                        <td>Carmen García</td>
+                        <td>Centro, León, Gto.</td>
+                        <td>Vacunación</td>
+                        <td>
+                            <span class="estado-transporte proceso">
+                                En proceso
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18-09-26</td>
+                        <td>3:00 PM</td>
+                        <td>Max</td>
+                        <td>Liliana Cisneros</td>
+                        <td>El Carmen, León, Gto.</td>
+                        <td>Revisión</td>
+                        <td>
+                            <span class="estado-transporte cancelado">
+                                Cancelado
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="panel-solicitud-transporte">
+        <h2 class="titulo-solicitud-transporte">SOLICITUD</h2>
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-7">
+                <div class="mascota-transporte">
+                    <img src="imagenes/perro1.jpeg"
+                         alt="Fotografía de la mascota"
+                         class="foto-transporte">
+                    <div class="datos-mascota-transporte">
+                        <h3>ROIER</h3>
+                        <p>Dueño: Ana Luz</p>
+                        <p>Dirección: Independencia, #301</p>
+                        <p>Col. México</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="datos-servicio-transporte">
+                    <p>Servicio: Baño</p>
+                    <p>Fecha: 20/09/26</p>
+                    <p>Hora: 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="botones-transporte">
+            <button type="button" class="btn btn-registrar-transporte">
+                REGISTRAR
+            </button>
+            <button type="button" class="btn btn-editar-transporte">
+                EDITAR
+            </button>
+        </div>
+    </section>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
