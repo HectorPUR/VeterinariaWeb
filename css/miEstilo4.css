@@ -408,3 +408,7 @@ body.pagina-transporte {
 
 .botones-transporte .btn-registrar-transporte { background-color: #16e8d9; color: #002b2d; }
 .botones-transporte .btn-editar-transporte    { background-color: #a9a9a9; color: #171717; }
+
+footer.pie-kevin{
+    color: white;
+}
