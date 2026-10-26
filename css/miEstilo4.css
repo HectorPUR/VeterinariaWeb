@@ -118,3 +118,158 @@ height: auto;
 #botonasignar:hover{
     background-color: blueviolet;
 }
+
+
+
+html, body {
+    background-color: #06181d !important;
+    color: #e0fbfc;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Asegura que los contenedores de Bootstrap no tengan fondo blanco */
+.personal-container, .container, .container-fluid {
+    background-color: transparent !important;
+}
+
+
+.navbar {
+    background-color: #041014 !important;
+    border-bottom: 1px solid #0d323a;
+}
+
+.navbar-brand, .nav-link {
+    color: #e0fbfc !important;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #00d2ff !important;
+}
+
+
+.personal-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.titulo-principal {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.subtitulo {
+    color: #8fb9bc;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.card-personal, .card-info {
+    background-color: #0c272e;
+    border: 1px solid #164650;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.encabezado-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.encabezado-card h4, .card-info h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.encabezado-card p, .card-info p {
+    color: #8fb9bc;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.buscador {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.buscador i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8fb9bc;
+}
+
+.buscador input {
+    width: 100%;
+    background-color: #06181d;
+    border: 1px solid #164650;
+    border-radius: 8px;
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.buscador input:focus {
+    background-color: #06181d;
+    color: #ffffff;
+    border-color: #00d2ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.15);
+}
+
+.buscador input::placeholder {
+    color: #61878b;
+}
+
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #164650;
+}
+
+.tabla-personal {
+    color: #ffffff;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.tabla-personal thead th {
+    background-color: #071c22;
+    color: #8fb9bc;
+    border-bottom: 1px solid #164650;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+}
+
+.tabla-personal tbody td {
+    background-color: #0c272e;
+    border-bottom: 1px solid #123740;
+    padding: 1rem;
+    color: #e0fbfc;
+    font-size: 0.9rem;
+}
+
+.tabla-personal tbody tr:hover td {
+    background-color: #10323a;
+}
+
+/* Utilerías */
+.text-cyan {
+    color: #00d2ff !important;
+}
