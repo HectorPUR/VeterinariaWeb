@@ -30,13 +30,28 @@ height: auto;
     padding-bottom: 12px;
 }
 
-/* TARJETAS */
+/* TARJETAS  */
 
-.tarjeta {
-    background-color: #082b5d;
-    color: white;
+.card.tarjeta {
+    background-color: #245C42 !important;
+    color: white !important;
     border: none;
-    border-radius: 0;
+    border-radius: 8px;
+}
+
+.card.tarjeta h2,
+.card.tarjeta small {
+    color: white;
+}
+
+.card.tarjeta a {
+    color: #FFF9F0;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card.tarjeta a:hover {
+    color: #E89B55;
 }
 
 .tarjeta h2 {
@@ -44,7 +59,7 @@ height: auto;
     font-size: 30px;
     font-weight: bold;
     margin: 5px 0;
-}/*
+}
 
 .tarjeta a {
     color: #d5e0f0;
@@ -410,5 +425,54 @@ body.pagina-transporte {
 .botones-transporte .btn-editar-transporte    { background-color: #a9a9a9; color: #171717; }
 
 footer.pie-kevin{
+    color: white;
+}
+
+/* EXPEDIENTE */
+
+.btn-expediente {
+    background-color: #245C42;
+    color: white;
+    border: 1px solid #4F8A5B;
+}
+
+.btn-expediente:hover {
+    background-color: #4F8A5B;
+    color: white;
+}
+
+.buscador-expediente {
+    background-color: #06181d;
+    color: white;
+    border-color: #245052;
+}
+
+.buscador-expediente::placeholder {
+    color: #8fb9bc;
+}
+
+.buscador-expediente:focus {
+    background-color: #06181d;
+    color: white;
+    border-color: #4F8A5B;
+    box-shadow: none;
+}
+
+.btn-buscar-expediente {
+    background-color: #245C42;
+    color: white;
+    border-color: #245C42;
+}
+
+.btn-buscar-expediente:hover {
+    background-color: #4F8A5B;
+    color: white;
+}
+
+.panel-dashboard > hr {
+    border-color: #819294 !important;
+}
+
+.pie-kevin {
     color: white;
 }

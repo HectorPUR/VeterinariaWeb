@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Expediente</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/miEstilo4.css">
+</head>
+
+<body>
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="imagenes/logo1.png" alt="Logo Veterinaria" id="logoImg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="citas.html">Citas</a>
+                <a class="nav-link" href="agendar.html">Agenda</a>
+                <a class="nav-link" href="personal.html">Personal</a>
+                <a class="nav-link"  href="transporte.html">Transporte</a>
+                <a class="nav-link" href="expediente.html">Expediente</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-4">
+        <div class="panel-dashboard p-4">
+            <!-- ENCABEZADO -->
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-3">
+                <div>
+                    <h2 class="fw-bold mb-1">Expediente médico</h2>
+                    <p class="subtitulo mb-0">Historial clínico de la mascota</p>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="imagenes/veterinaria.jpg" alt="Doctora" class="rounded-circle" width="45" height="45">
+                    <div>
+                        <strong>Dra. Lucía</strong>
+                        <p class="mb-0 small">Veterinaria</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- DATOS DE LA MASCOTA -->
+            <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
+
+                <img src="imagenes/perro1.jpeg" alt="Roier" class="rounded-circle" width="100" height="100">
+                <div>
+                    <h3 class="fw-bold mb-2">ROIER</h3>
+                    <p class="mb-1">Perro / Bichón Maltés / Macho</p>
+                    <p class="mb-1"><strong>Peso:</strong> 12 kg</p>
+                    <p class="mb-1"><strong>Dueño:</strong> Ana Luz</p>
+                    <p class="mb-0"><strong>Teléfono:</strong> 477-345-9087</p>
+                </div>
+            </div>
+
+            <!-- BOTONES DE SECCIONES -->
+            <h5 class="subtitulo mb-3">Información médica</h5>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <button type="button" class="btn btn-expediente">
+                    Historial
+                </button>
+
+                <button type="button" class="btn btn-expediente">
+                    Vacunas
+                </button>
+
+                <button type="button" class="btn btn-expediente">
+                    Desparasitación
+                </button>
+
+                <button type="button" class="btn btn-expediente">
+                    Alertas
+                </button>
+            </div>
+
+            <!-- HISTORIAL -->
+            <h5 class="subtitulo mb-3">Historial de consultas</h5>
+
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered text-center align-middle tabla-citas mb-0">
+
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Mascota</th>
+                            <th>Dueño</th>
+                            <th>Servicio</th>
+                            <th>Veterinario</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>13-09-26</td>
+                            <td>12:00 PM</td>
+                            <td>Roier</td>
+                            <td>Ana Luz</td>
+                            <td>Desparasitación</td>
+                            <td>Dra. Lucía</td>
+                            <td>Pendiente</td>
+                        </tr>
+
+                        <tr>
+                            <td>14-09-26</td>
+                            <td>1:00 PM</td>
+                            <td>Roier</td>
+                            <td>Ana Luz</td>
+                            <td>Vacunación</td>
+                            <td>Dra. Lucía</td>
+                            <td>Confirmada</td>
+                        </tr>
+
+                        <tr>
+                            <td>15-09-26</td>
+                            <td>2:00 PM</td>
+                            <td>Roier</td>
+                            <td>Ana Luz</td>
+                            <td>Revisión</td>
+                            <td>Dra. Lucía</td>
+                            <td>Completada</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <!-- BÚSQUEDA VISUAL -->
+            <div class="input-group">
+                <input type="text"
+                       class="form-control buscador-expediente"
+                       placeholder="Buscar historial">
+
+                <button class="btn btn-buscar-expediente" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-kevin text-center py-3">
+        <p class="mb-0">&copy; 2026 Hector Pulido Rodriguez.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
