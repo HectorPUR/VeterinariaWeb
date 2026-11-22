@@ -1,7 +1,7 @@
 const base=[
-    {user: 'Administrador', pass:'1209', rol:'Administrador', url:'index.html', Paginas:['index.html','personal.html','citas.html','transporte.html', 'agendar.html', 'expediente.html']},
-    {user: 'Veterinario', pass:'1209', rol:'Veterinarios', url:'agendar.html', Paginas:['agendar.html', 'index.html', 'citas.html', 'expediente.html']},
-    {user: 'Recepcionista', pass:'1209', rol:'Recepcionistas', url:'citas.html', Paginas:['citas.html', 'index.html']},
+    {user: 'Administrador', pass:'1209', rol:'Administrador', url:'index_ante.html', Paginas:['index_ante.html','personal.html','citas.html','transporte.html', 'agendar.html', 'expediente.html']},
+    {user: 'Veterinario', pass:'1209', rol:'Veterinarios', url:'agendar.html', Paginas:['agendar.html', 'index_ante.html', 'citas.html', 'expediente.html']},
+    {user: 'Recepcionista', pass:'1209', rol:'Recepcionistas', url:'citas.html', Paginas:['citas.html', 'index_ante.html']},
     {user: 'Auxiliar', pass:'1209', rol:'Auxiliares', url:'transporte.html', Paginas:['transporte.html']}
 ];
 
@@ -29,7 +29,7 @@ function iniciarSesion(e){
     function cerrarSesion(){
         if(confirm("¿Quieres salir de la sesion?")){
         sessionStorage.removeItem('sesionActiva');
-        window.location.href="inicio.html"
+        window.location.href="index.html"
     }
 }
 
@@ -38,7 +38,7 @@ function iniciarSesion(e){
         const sesion=JSON.parse(sessionStorage.getItem('sesionActiva'));
         if(!sesion){
             //no hay sesion
-            window.location.href="inicio.html";
+            window.location.href="index.html";
         }else if(sesion.rol !== rolRequerido){
             //si hay sesion pero no es de su rol
             window.location.href=sesion.url;
@@ -53,7 +53,7 @@ function iniciarSesion(e){
         const sesion=JSON.parse(sessionStorage.getItem('sesionActiva'));
         if(!sesion){
             //no hay sesion
-            window.location.href="inicio.html";
+            window.location.href="index.html";
             return;
         }
 
