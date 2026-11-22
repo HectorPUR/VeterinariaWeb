@@ -67,7 +67,7 @@ function iniciarSesion(e){
     function saltarLoginSiAutenticado(){
         const sesion=JSON.parse(sessionStorage.getItem('sesionActiva'));
         if(sesion){
-            alert(`Ya hay una sesión iniciada como" ${sesion.rol}.`);
+            alert(`Ya hay una sesión iniciada como ${sesion.rol}.`);
             window.location.href=sesion.url;
         }
     }
