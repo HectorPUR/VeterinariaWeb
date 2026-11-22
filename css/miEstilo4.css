@@ -15,14 +15,25 @@ height: auto;
 
 /* PANEL PRINCIPAL */
 
+body {
+    background-color: #021F23;
+    color: aliceblue;
+    display: block;
+    min-height: 100vh;
+}
+
+.panel-dashboard h2 {
+    color: #fff;
+}
+
+/* PANEL PRINCIPAL */
 .panel-dashboard {
     background-color: #032629;
-    border: 2px solid #e8eeee;
-    border-radius: 0;
+    border: 1px solid #245052;
+    border-radius: 10px;
 }
 
 /* SUBTITULO */
-
 .subtitulo {
     color: #d0dddd;
     font-weight: normal;
@@ -30,13 +41,19 @@ height: auto;
     padding-bottom: 12px;
 }
 
-/* TARJETAS  */
-
+/* TARJETAS */
 .card.tarjeta {
     background-color: #245C42 !important;
     color: white !important;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 135px;
+    transition: transform 0.2s;
+}
+
+.card.tarjeta:hover {
+    transform: translateY(-3px);
 }
 
 .card.tarjeta h2,
@@ -44,53 +61,113 @@ height: auto;
     color: white;
 }
 
-.card.tarjeta a {
+.tarjeta h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.tarjeta a {
     color: #FFF9F0;
     font-size: 12px;
     text-decoration: none;
 }
 
-.card.tarjeta a:hover {
-    color: #E89B55;
-}
-
-.tarjeta h2 {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.tarjeta a {
-    color: #d5e0f0;
-    font-size: 12px;
-    text-decoration: none;
-}
-
 .tarjeta a:hover {
-    color: white;
+    color: #E89B55;
+    text-decoration: underline;
 }
 
 /* TABLA */
-
 .tabla-citas {
     background-color: #032629;
     color: white;
     border-color: #245052;
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 0;
 }
 
 .tabla-citas thead th {
     background-color: #082b30;
     color: white;
+    white-space: nowrap;
 }
 
 .tabla-citas tbody td {
     background-color: #032629;
     color: white;
     border-color: #245052;
+    white-space: nowrap;
 }
 
+/* BOTONES Y ENLACES */
+.navbar-nav .nav-link {
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E89B55;
+}
+
+/* PIE DE PAGINA */
+.pie-kevin {
+    background-color: #011719;
+    color: #d0dddd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.pie-kevin p {
+    margin: 0;
+}
+
+/* ADAPTACION PARA TELEFONOS */
+@media (max-width: 576px) {
+
+    main.container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .panel-dashboard {
+        padding: 15px !important;
+    }
+
+    .panel-dashboard h2 {
+        font-size: 22px;
+    }
+
+    .panel-dashboard h5 {
+        font-size: 16px;
+    }
+
+    .card.tarjeta {
+        min-height: 120px;
+        padding: 10px !important;
+    }
+
+    .tarjeta h2 {
+        font-size: 25px;
+    }
+
+    .tarjeta small {
+        font-size: 11px;
+    }
+
+    .tarjeta a {
+        font-size: 11px;
+    }
+
+    .tabla-citas {
+        font-size: 11px;
+    }
+
+    .pie-kevin {
+        font-size: 12px;
+    }
+
+}
 
 /*Estilo agendar*/
 .Calendario{
@@ -430,10 +507,14 @@ footer.pie-kevin{
 
 /* EXPEDIENTE */
 
+/* BOTONES DE INFORMACION */
 .btn-expediente {
     background-color: #245C42;
     color: white;
     border: 1px solid #4F8A5B;
+    border-radius: 6px;
+    padding: 9px 18px;
+    transition: 0.2s;
 }
 
 .btn-expediente:hover {
@@ -441,6 +522,7 @@ footer.pie-kevin{
     color: white;
 }
 
+/* BUSCADOR */
 .buscador-expediente {
     background-color: #06181d;
     color: white;
@@ -469,10 +551,193 @@ footer.pie-kevin{
     color: white;
 }
 
+/* SEPARADOR */
 .panel-dashboard > hr {
     border-color: #819294 !important;
 }
 
+/* PIE DE PAGINA */
 .pie-kevin {
     color: white;
+}
+
+/* ADAPTACION PARA TELEFONOS */
+
+@media (max-width: 576px) {
+
+    /* PANEL */
+    main.container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .panel-dashboard {
+        padding: 15px !important;
+    }
+
+    /* ENCABEZADO */
+    .panel-dashboard h2 {
+        font-size: 22px;
+    }
+
+    .panel-dashboard h3 {
+        font-size: 20px;
+    }
+
+    /* DATOS DE LA MASCOTA */
+    .datos-mascota {
+        align-items: flex-start !important;
+    }
+
+    .datos-mascota img {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+    }
+
+    .datos-mascota p {
+        font-size: 13px;
+    }
+
+    /* BOTONES */
+    .botones-expediente {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-expediente {
+        width: 100%;
+        font-size: 12px;
+        padding: 9px 5px;
+    }
+
+    /* TABLA */
+    .tabla-citas {
+        font-size: 11px;
+    }
+
+    /* BUSCADOR */
+    .buscador-contenedor {
+        width: 100%;
+    }
+
+    .pie-kevin {
+        font-size: 12px;
+    }
+}
+
+/*LOGIN VETERINARIA*/
+
+.login-body {
+    background-color: #021F23;
+    color: aliceblue;
+}
+
+/* IMAGEN */
+.login-imagen {
+    height: 100vh;
+}
+
+.login-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORMULARIO */
+.login-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* TARJETA */
+.login-card {
+    background-color: #032629;
+    color: aliceblue;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    border: 1px solid #245052 !important;
+    padding-top: 20px;
+}
+
+/* CAMPOS */
+.login-card .form-control,
+.login-card .form-select {
+    background-color: #06181d;
+    color: white;
+    border-color: #245052;
+}
+
+.login-card .form-control:focus,
+.login-card .form-select:focus {
+    background-color: #06181d;
+    color: white;
+    border-color: #4F8A5B;
+    box-shadow: none;
+}
+
+.login-card .form-select option {
+    background-color: #06181d;
+    color: white;
+}
+
+/* RECUPERAR CONTRASEÑA */
+.login-recuperar {
+    text-align: center;
+    font-size: 13px;
+    color: #aabbbb;
+}
+
+/* BOTON */
+.btn-login {
+    display: block;
+    margin: auto;
+    background-color: #4F8A5B;
+    color: white;
+    border: none;
+}
+
+.btn-login:hover {
+    background-color: #245C42;
+    color: white;
+}
+
+/* TELEFONOS */
+@media (max-width: 767px) {
+
+    .login-imagen {
+        height: 230px;
+    }
+
+    .login-imagen img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .login-contenedor {
+        padding: 25px 15px;
+        align-items: flex-start;
+    }
+
+    .login-card {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .login-imagen {
+        height: 180px;
+    }
+
+    .login-card {
+        padding-top: 12px;
+    }
+
+    .login-card .card-body {
+        padding: 15px !important;
+    }
 }
