@@ -25,6 +25,10 @@
                 <a class="nav-link"  href="transporte.html">Transporte</a>
                 <a class="nav-link" href="expediente.html">Expediente</a>
             </div>
+            <div class="d-flex align-items-center">
+                <span id="infoUsuario" class="text-white me-3 fw-bold"></span>
+                <button class="btn btn-sm btn-danger fw-bold" onclick="cerrarSesion()">Salir</button>
+            </div>
             </div>
         </div>
     </nav>
@@ -250,6 +254,10 @@
         </div>
     </div>
 </div>
+<script src="js/veterinaria.js"></script>
+     <script>
+    ValidarPerfil('personal.html');
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

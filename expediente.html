@@ -27,6 +27,10 @@
                 <a class="nav-link"  href="transporte.html">Transporte</a>
                 <a class="nav-link" href="expediente.html">Expediente</a>
             </div>
+            <div class="d-flex align-items-center">
+                <span id="infoUsuario" class="text-white me-3 fw-bold"></span>
+                <button class="btn btn-sm btn-danger fw-bold" onclick="cerrarSesion()">Salir</button>
+            </div>
             </div>
         </div>
     </nav>
@@ -158,5 +162,9 @@
         <p class="mb-0">&copy; 2026 Hector Pulido Rodriguez.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/veterinaria.js"></script>
+     <script>
+    ValidarPerfil('expediente.html');
+</script>
 </body>
 </html>
